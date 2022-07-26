@@ -9,18 +9,13 @@ public class Scene implements Curd{
 
     private List<Curd> balls;
 
-    public BallVel ballVel;
-    public BallAcc ballAcc;
-
     @Override
     public void create() {
         balls = new ArrayList<>();
 
-        ballVel = new BallVel();
-        ballAcc = new BallAcc();
 
-        balls.add(ballAcc);
-        //balls.add(ballVel);
+        balls.add(new BallAcc());
+        //balls.add(new BallVel());
 
         for (Curd ball :
                 balls) {
