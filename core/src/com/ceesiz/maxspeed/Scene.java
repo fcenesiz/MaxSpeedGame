@@ -20,6 +20,7 @@ public class Scene implements Curd{
         ballAcc = new BallAcc();
 
         balls.add(ballAcc);
+        //balls.add(ballVel);
 
         for (Curd ball :
                 balls) {

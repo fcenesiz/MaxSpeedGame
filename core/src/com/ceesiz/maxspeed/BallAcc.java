@@ -24,7 +24,7 @@ public class BallAcc implements Curd {
         sprite.setSize(36, 36);
         sprite.setOriginCenter();
 
-        this.position = new Vector2(50, Gdx.graphics.getHeight() * 0.5f);
+        this.position = new Vector2(50, Gdx.graphics.getHeight() * 0.75f);
         this.acceleration = new Vector2();
         this.velocity = new Vector2();
     }
