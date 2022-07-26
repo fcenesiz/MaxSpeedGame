@@ -37,7 +37,7 @@ public class BallAcc implements Curd {
         if (position.x > 400)
             return;
 
-        this.velocity.add(acceleration);
+        this.velocity.mulAdd(acceleration, dt);
         this.traveledDistance += this.velocity.len() * dt;
 
         this.position.mulAdd(velocity, dt);
