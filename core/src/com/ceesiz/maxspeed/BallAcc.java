@@ -39,7 +39,6 @@ public class BallAcc implements Curd {
 
         this.velocity.mulAdd(acceleration, dt);
         this.traveledDistance += this.velocity.len() * dt;
-
         this.position.mulAdd(velocity, dt);
 
 
