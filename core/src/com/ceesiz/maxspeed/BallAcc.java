@@ -30,16 +30,16 @@ public class BallAcc implements Curd {
     }
 
     public void update(float dt) {
-        this.acceleration.set(100, 0f);
+        this.acceleration.set(100, 0f); // m/s²
     }
 
     public void lateUpdate(float dt) {
         if (position.x > 400)
             return;
 
-        this.velocity.mulAdd(acceleration, dt);
+        this.velocity.mulAdd(acceleration, dt); // m/s
         this.traveledDistance += this.velocity.len() * dt;
-        this.position.mulAdd(velocity, dt);
+        this.position.mulAdd(velocity, dt); // m
 
 
         System.out.println("\t elapsed time: " + time +
