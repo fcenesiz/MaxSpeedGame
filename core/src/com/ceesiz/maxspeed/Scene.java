@@ -14,7 +14,7 @@ public class Scene implements Curd{
         balls = new ArrayList<>();
 
 
-        balls.add(new BallAcc());
+        balls.add(new BallJoystick());
         //balls.add(new BallVel());
 
         for (Curd ball :
