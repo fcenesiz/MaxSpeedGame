@@ -8,7 +8,7 @@ import com.ceesiz.maxspeed.Main;
 public class DesktopLauncher {
 	public static void main (String[] arg) {
 		Lwjgl3ApplicationConfiguration config = new Lwjgl3ApplicationConfiguration();
-		config.setForegroundFPS(120);
+		config.setForegroundFPS(30);
 		config.setWindowedMode(500, 500);
 		new Lwjgl3Application(new Main(), config);
 	}
